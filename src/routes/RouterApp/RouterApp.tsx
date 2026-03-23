@@ -8,7 +8,7 @@ import SessionBootstrap from "./SessionBootstrap";
 
 const RouterApp = () => {
   return (
-    <BrowserRouter basename="/Aiti-Guru/">
+    <BrowserRouter basename="/Aiti-Guru">
       <SessionBootstrap />
       <Routes>
         <Route path="login" element={<LoginPage />} />
