@@ -1,15 +1,14 @@
-import { BrowserRouter, Route, Routes } from "react-router"
+import { BrowserRouter, Route, Routes } from "react-router";
 
-import LoginPage from "../../pages/LoginPage"
+import LoginPage from "../../pages/LoginPage";
 
-import App from "../../App"
-import ProtectedRoute from "./ProtectedRoute"
-import SessionBootstrap from "./SessionBootstrap"
+import App from "../../App";
+import ProtectedRoute from "./ProtectedRoute";
+import SessionBootstrap from "./SessionBootstrap";
 
 const RouterApp = () => {
-
- return (
-    <BrowserRouter>
+  return (
+    <BrowserRouter basename="/Aiti-Guru/">
       <SessionBootstrap />
       <Routes>
         <Route path="login" element={<LoginPage />} />
@@ -23,7 +22,7 @@ const RouterApp = () => {
         />
       </Routes>
     </BrowserRouter>
-    )
-}
+  );
+};
 
-export default RouterApp
+export default RouterApp;
